@@ -15,13 +15,9 @@ class GoogleRelatedQueriesParser
         let queries = [];
         nightmare
             .goto(this.getUrl(searchString))
-            .wait('#' + this.relatedQueriesBockId)
+            //.wait('#' + this.relatedQueriesBockId)
             .evaluate(function () {
-                let result = null;
-                if(document.querySelector('#brs')){
-                    result = document.querySelector('#brs').innerHTML;
-                }
-                return result;
+                return document.querySelector('html').innerHTML;
             })
             .end()
             .then(function (html) {
