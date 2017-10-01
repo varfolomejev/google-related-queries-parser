@@ -1,5 +1,5 @@
 const url = require('url');
-const nightmare = require('nightmare')({ show: true });
+const nightmare = require('nightmare')({ show: false });
 const cheerio = require('cheerio');
 
 class GoogleRelatedQueriesParser
@@ -11,7 +11,7 @@ class GoogleRelatedQueriesParser
         this.relatedQueriesBockId = settings.relatedQueriesBockId || 'brs';
     }
 
-    async parse(searchString, callback){
+    parse(searchString, callback){
         let queries = [];
         nightmare
             .goto(this.getUrl(searchString))

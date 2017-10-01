@@ -1,6 +1,6 @@
 {
   "name": "google-related-queries-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "Google related queries parser",
   "author": "Varfolomejev Igor",
@@ -9,5 +9,6 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "nightmare": "^2.10.0"
-  }
+  },
+  "main": "google-related-queries-parser.js"
 }
