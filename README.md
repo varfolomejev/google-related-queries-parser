@@ -1,0 +1,1 @@
+# google-related-queries-parser
