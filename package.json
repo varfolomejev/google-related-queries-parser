@@ -1,0 +1,13 @@
+{
+  "name": "google-related-queries-parser",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Google related queries parser",
+  "author": "Varfolomejev Igor",
+  "repository": "git@github.com:varfolomejev/google-related-queries-parser.git",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "nightmare": "^2.10.0"
+  }
+}
